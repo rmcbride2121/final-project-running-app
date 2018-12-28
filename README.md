@@ -71,7 +71,7 @@
 * In the Controller, create functions for list,show,create,update,remove
 
 ## Points
-* When I yarn start, the web page loads with no errors - 10pts
+* When I npm start, the web page loads with no errors - 10pts
 * I can navigate to the list and create screen from links - 10pts
 * I can enter information into the create screen and click save. If I go back to the list screen, that new information is there. - 20pts
 * If I go to the list screen it will show all current existing information - 20pts
