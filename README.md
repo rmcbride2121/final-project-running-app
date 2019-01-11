@@ -10,7 +10,7 @@
 * Client code goes in client/src
 
 ### React
-* Create a function component that list out a collection of your models (ListOfUsers)
+* Create a function component that list out a collection of your models
     * Use prop types to define what props the component needs
     * It should probably need a prop named after the plural of your model, and it should probably be an array
     * Probably want to map over this array and create some divs or li’s showing 3 of the properties of the item
@@ -71,12 +71,17 @@
 * In the Controller, create functions for list,show,create,update,remove
 
 ## Points
-* When I npm start, the web page loads with no errors - 10pts
-* I can navigate to the list and create screen from links - 10pts
-* I can enter information into the create screen and click save. If I go back to the list screen, that new information is there. - 20pts
-* If I go to the list screen it will show all current existing information - 20pts
-* The list screen has a view link for each item. If I click that link the detail screen appears. The details of the item are shown. - 20pts
-* If I click the delete button on the list, the item I clicked will be removed from the list - 20pts
+* 10 pts, When I npm start, the web page loads with no errors
+* 10 pts, I can navigate to the list and create screen from links
+* 20 pts, I can enter information into the create screen and click save. If I go back to the list screen, that new information is there. 
+* 20 pts, If I go to the list screen it will show all current existing information
+* 20 pts, The list screen has a view link for each item. If I click that link the detail screen appears. The details of the item are shown. - 20pts
+* 20 pts, If I click the delete button on the list, the item I clicked will be removed from the list - 20pts
+* -30 pts, No use of mongoDB
+* -30 pts, No use of your own custom mongoose model that you came up with
+* -10 pts, No use of redux
+* -5  pts, No use of react router
+
 
 
 ## Extra Credit
