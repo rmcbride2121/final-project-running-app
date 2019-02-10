@@ -75,7 +75,7 @@
 * 10 pts, I can navigate to the list and create screen from links
 * 20 pts, I can enter information into the create screen and click save. If I go back to the list screen, that new information is there. 
 * 20 pts, If I go to the list screen it will show all current existing information
-* 20 pts, The list screen has a view link for each item. If I click that link the detail screen appears. The details of the item are shown. - 20pts
+* 20 pts, The list screen has a view link for each item. If I click that link the detail screen appears. The details of the item are shown.
 * 20 pts, If I click the delete button on the list, the item I clicked will be removed from the list - 20pts
 * -30 pts, No use of mongoDB
 * -30 pts, No use of your own custom mongoose model that you came up with
