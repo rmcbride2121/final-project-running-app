@@ -1,24 +1,19 @@
-.App {
+.app {
   text-align: center;
+  margin: auto;
+  max-width: 500px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+.header {
+  background: #009BD1;
   color: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: left;
+  align-items: center;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.critterIcon {
+  width: 25%;
+  height: auto;
 }
