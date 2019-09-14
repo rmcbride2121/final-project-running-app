@@ -1,8 +1,14 @@
+* {
+  font-size: 1.1rem;
+}
+
 .app {
   text-align: center;
   margin: auto;
-  max-width: 500px;
+  max-width: 350px;
 }
+
+/* header section */
 
 .header {
   background: #009BD1;
@@ -16,4 +22,28 @@
 .critterIcon {
   width: 25%;
   height: auto;
+}
+
+/* main section */
+
+.main {
+  max-width: 500px;
+}
+
+.critterPlant {
+  max-width: 350px;
+  height: auto;
+}
+
+.form-control {
+  margin: 1rem auto;
+}
+
+/* sign in section */
+.sign-in {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }

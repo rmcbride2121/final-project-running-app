@@ -1,21 +1,25 @@
 import React, { Component } from "react";
 import "./App.css";
-import critterIcon from "./images/critter-icon.png";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    this.state = {isLogInButtonClicked: false};
   }
-  componentDidMount() {
+  
+  handleClick() {
+    this.setState( {
+      isLogInButtonClicked: true
+    });
   }
+
   render() {
     return (
       <div className="app">
-        <div className="header">
-          <h1>critter</h1><img className="critterIcon" src={critterIcon} />
-        </div>
-        <button className="btn btn-primary">Create</button>
-        <button className="btn btn-primary">View</button>
+        <Header />
+        <Main handleClick={this.handleClick}/>
       </div>
     );
   }
