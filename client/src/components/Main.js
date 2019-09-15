@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import critterPlant from "../images/critter-plant-icon.png";
 
 class Main extends Component {
-    constructor() {
-        super();
-      }
-      
       render() {
         return (
             <div className="main">
@@ -15,7 +11,8 @@ class Main extends Component {
                 <input className="form-control" value="Create a Password"></input>
                 <button className="btn btn-primary">Meet your pet</button>
                 <div className="sign-in">
-                    <p>Already have an account?</p><button onClick={this.handleClick} className="btn btn-primary">Sign in</button>
+                    <p>Already have an account?</p>
+                    <button onClick={this.handleClick} className="btn btn-primary">Sign in</button>
                 </div>
         </div>
         )
