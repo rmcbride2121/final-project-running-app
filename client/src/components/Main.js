@@ -1,22 +1,28 @@
-import React, { Component } from "react";
-import critterPlant from "../images/critter-plant-icon.png";
+import React, {Component} from "react";
+import LogIn from "./LogIn";
+import HomePage from "./HomePage";
 
 class Main extends Component {
-      render() {
-        return (
-            <div className="main">
-                <img className="critterPlant" src={critterPlant} />
-                <p>Start running, stay motivated, and meet goals to help your pet thrive!</p>
-                <input className="form-control" value="Enter Your Email Address"></input>
-                <input className="form-control" value="Create a Password"></input>
-                <button className="btn btn-primary">Meet your pet</button>
-                <div className="sign-in">
-                    <p>Already have an account?</p>
-                    <button onClick={this.handleClick} className="btn btn-primary">Sign in</button>
-                </div>
-        </div>
-        )
-      }
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+    this.state = {isLogInButtonClicked: false};
+  }
+
+  handleClick = () => {
+    this.setState( {
+      isLogInButtonClicked: !this.state.isLogInButtonClickeds
+    });
+  }
+
+  render() {
+
+    if (this.state.isLogInButtonClicked === true) {
+      return <LogIn />;
+    } 
+    return <HomePage handleClick={this.handleClick} />;
+    
+  }
 }
 
-export default (Main);
+export default Main;

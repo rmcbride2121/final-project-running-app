@@ -1,17 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 
-class LogIn extends Component {
-    constructor() {
-        super();
-      }
+function LogIn() {
+  return (
+    <div className="login">Testing</div>
+  );
       
-      render() {
-        return (
-            <div className="login">
-                
-            </div>
-        )
-      }
 }
 
 export default (LogIn);
