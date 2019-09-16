@@ -1,7 +1,7 @@
 {
   "name": "advanced-checkpoint-2",
   "version": "1.0.0",
-  "description": "",
+  "description": "* npm install, npm start * Don’t use this readme to figure out what code to type * Use all other projects we have done as code examples * Pick a real life thing to use as a model. Vehicle, Product, Movie …etc * Implement 5 properties for this model.  * Make sure if you are on a windows machine you remove the single quotes from package.json",
   "main": "index.js",
   "scripts": {
     "lint": "eslint src",
@@ -38,9 +38,10 @@
     "body-parser": "^1.19.0",
     "create-react-app": "1.2.1",
     "dotenv": "^2.0.0",
-    "express": "^4.14.0",
+    "express": "*",
     "jwt-simple": "^0.5.1",
-    "mongoose": "^4.10.2",
+    "mongodb": "^3.3.2",
+    "mongoose": "*",
     "passport": "^0.3.2",
     "passport-jwt": "^2.2.1",
     "passport-local": "^1.0.0",
@@ -54,5 +55,13 @@
     "redux-thunk": "^2.2.0",
     "whatwg-fetch": "^2.0.3"
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:3001",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rmcbride2121/final-project-running-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rmcbride2121/final-project-running-app/issues"
+  },
+  "homepage": "https://github.com/rmcbride2121/final-project-running-app#readme"
 }

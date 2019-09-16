@@ -1,14 +1,27 @@
-import express from "express";
-import bodyParser from "body-parser";
-import mongoose from "mongoose";
-import commentsRoutes from "./routes/commentsRoutes";
+// require("dotenv").config();
+const express = require("express");
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+
+// import bodyParser from "body-parser";
+
+// import mongoose from "mongoose";
+
+const userRoutes = require("./routes/userRoutes");
 const app = express();
+
 app.use(bodyParser.json());
 app.use(express.static("public"));
-app.use("/comments", commentsRoutes);
 
-// mongoose.set("debug", true);
-// mongoose.Promise = global.Promise;
+// let mongoose = require("mongoose");
+mongoose.connect(
+  "mongodb+srv://alaynapuck28:horseshoe2@cluster0-3umzc.mongodb.net/checkpoint2",
+  { useNewUrlParser: true }
+);
+app.use("/users", userRoutes);
+
+mongoose.set("debug", true);
+mongoose.Promise = global.Promise;
 // mongoose.connect("mongodb://localhost/checkpoint2");
 
 const port = process.env.PORT || 3001;
