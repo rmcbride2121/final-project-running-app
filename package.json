@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "description": "* npm install, npm start * Don’t use this readme to figure out what code to type * Use all other projects we have done as code examples * Pick a real life thing to use as a model. Vehicle, Product, Movie …etc * Implement 5 properties for this model.  * Make sure if you are on a windows machine you remove the single quotes from package.json",
   "main": "index.js",
+  "engines": {
+    "node": "10.16.0",
+    "npm": "6.9.0"
+  },
   "scripts": {
     "lint": "eslint src",
     "dev": "nodemon --exec 'babel-node server/index'",
     "test": "npm run lint",
-    "start": "nf start"
+    "start": "node ./server/index.js"
   },
   "keywords": [],
   "author": "",
