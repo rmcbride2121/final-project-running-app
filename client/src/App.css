@@ -2,10 +2,22 @@
   font-size: 1.1rem;
 }
 
+html, body {
+  height: 100%;
+  background: #ECECEC;
+}
+
 .App {
   text-align: center;
   margin: auto;
   max-width: 350px;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 19px 2px rgba(173,173,173,1);
+  -moz-box-shadow: 0px 0px 19px 2px rgba(173,173,173,1);
+  box-shadow: 0px 0px 19px 2px rgba(173,173,173,1);
+  border-radius: 10px;
 }
 
 /* header section */
@@ -17,6 +29,7 @@
   grid-template-columns: 1fr 2fr;
   justify-content: left;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .critterIcon {
@@ -28,10 +41,11 @@
 
 .main {
   max-width: 500px;
+  padding: 0 1rem;
 }
 
 .critterPlant {
-  max-width: 350px;
+  max-width: 75%;
   height: auto;
 }
 

@@ -8,9 +8,10 @@ function HomePage(props) {
       <p>Start running, stay motivated, and meet goals to help your pet thrive!</p>
       <input className="form-control" value="Enter Your Email Address" />
       <input className="form-control" value="Create a Password" />
-      <button className="btn btn-primary">Meet your pet</button>
+      <button onClick={props.handleClick2} className="btn btn-primary">Meet your pet</button>
       <div className="sign-in">
         <p>Already have an account?</p>
+
         <button onClick={props.handleClick} className="btn btn-primary">Sign in</button>
       </div>
     </div>
