@@ -1,13 +1,26 @@
-import React from "react";
+import React, {Component} from "react";
+import MeetPet from "./MeetPet";
+import LogInComponent from "./LogInComponent";
 
-function LogIn() {
-  return (
-    <div className="login">
-      <input className="form-control" value="Enter Your Email Address" />
-      <input className="form-control" value="Create a Password" />
-      <button className="btn btn-primary">Meet your pet</button>
-    </div>
-  );
+class LogIn extends Component {
+  constructor(props) {
+    super(props);
+    this.handleClick2 = this.handleClick2.bind(this);
+    this.state = {isMeetPetButtonClicked: false};
+  }
+
+  handleClick2 = () => {
+    this.setState({
+      isMeetPetButtonClicked: !this.state.isMeetPetButtonClicked
+    });
+  }
+
+  render() {
+    if (this.state.isMeetPetButtonClicked === true) {
+      return <MeetPet />;
+    }
+    return <LogInComponent handleClick2={this.handleClick2} />;
+  }
       
 }
 
