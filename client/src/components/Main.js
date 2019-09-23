@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Header from "./Header";
 import LogIn from "./LogIn";
 import HomePage from "./HomePage";
 import MeetPet from "./MeetPet";
@@ -27,13 +28,29 @@ class Main extends Component {
   render() {
 
     if (this.state.isLogInButtonClicked === true) {
-      return <LogIn handleClick2={this.handleClick2} />;
+      return (
+        <div className="App">
+          <Header />
+          <LogIn handleClick2={this.handleClick2} />
+        </div>
+      );
     } else if (this.state.isMeetPetButtonClicked === true) {
-      return <MeetPet />;
+      return (
+        <div className="App">
+          <Header />
+          <MeetPet />
+        </div>
+      );
     }
-    return <HomePage handleClick={this.handleClick} handleClick2={this.handleClick2} />;
+    return (
+      <div className="App">
+        <Header />
+        <HomePage handleClick={this.handleClick} handleClick2={this.handleClick2} />
+      </div>
+    );
     
   }
 }
 
 export default Main;
+

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import critterIcon from "../images/critter-icon.png";
+import critterIcon from "../images/critter-head.png";
 
 class Header extends Component {
   constructor() {
@@ -9,7 +9,7 @@ class Header extends Component {
   render() {
     return (
       <div className="header">
-        <h1>critter</h1><img className="critterIcon" src={critterIcon} />
+        <h1 className="title">critter</h1><img className="critterIcon" src={critterIcon} />
       </div>
     );
   }
