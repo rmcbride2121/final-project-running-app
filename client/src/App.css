@@ -48,7 +48,7 @@ html, body {
 
 .main {
   max-width: 500px;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 .critterPlant {
@@ -81,6 +81,11 @@ input {
 
 .sign-in p {
   padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.sign-in button {
+  font-size: 0.9rem;
 }
 
 /* Login Page */
