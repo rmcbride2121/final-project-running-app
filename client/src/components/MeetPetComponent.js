@@ -5,7 +5,7 @@ function MeetPetComponent(props) {
     <div className="meetPet">
       meet pet page
 
-      <button onClick={props.LogARunButton}>Log A Run</button>
+      <button onClick={props.LogARunButton} className="btn btn-primary">Log A Run</button>
     </div>
   );
       
