@@ -1,7 +1,9 @@
 import React, {Component} from "react";
+import Header from "./Header";
+import Header2 from "./Header2";
 import LogIn from "./LogIn";
 import HomePage from "./HomePage";
-import MeetPet from "./MeetPet";
+import CreateAGoal from "./CreateAGoal";
 
 class Main extends Component {
   constructor(props) {
@@ -27,13 +29,29 @@ class Main extends Component {
   render() {
 
     if (this.state.isLogInButtonClicked === true) {
-      return <LogIn handleClick2={this.handleClick2} />;
+      return (
+        <div className="App">
+          <Header2 />
+          <LogIn handleClick2={this.handleClick2} />
+        </div>
+      );
     } else if (this.state.isMeetPetButtonClicked === true) {
-      return <MeetPet />;
+      return (
+        <div className="App">
+          <Header2 />
+          <CreateAGoal />
+        </div>
+      );
     }
-    return <HomePage handleClick={this.handleClick} handleClick2={this.handleClick2} />;
+    return (
+      <div className="App">
+        <Header />
+        <HomePage handleClick={this.handleClick} handleClick2={this.handleClick2} />
+      </div>
+    );
     
   }
 }
 
 export default Main;
+

@@ -11,7 +11,7 @@
     "lint": "eslint src",
     "dev": "nodemon --exec 'babel-node server/index'",
     "test": "npm run lint",
-    "start": "node ./server/index.js"
+    "start": "nf start"
   },
   "keywords": [],
   "author": "",
